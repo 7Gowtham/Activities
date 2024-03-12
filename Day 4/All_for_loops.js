@@ -37,14 +37,14 @@ let my_data = {
       "dates": "2014 - 2018"
     },
     {
-      "high-school": "12th grade",
+      "high_school": "12th grade",
       "school_name": "Sri Vijay Vidhyalaya",
       "streams": "Computer Science",
       "marks": "1167",
       "location": "Hosur"
     },
     {
-      "secondary-school": "10th grade",
+      "secondary_school": "10th grade",
       "school_name": "The Ashok Leyland School",
       "marks": "9.6",
       "location": "Hosur"
