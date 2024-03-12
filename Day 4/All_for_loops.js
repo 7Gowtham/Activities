@@ -66,7 +66,7 @@ for(let k in my_data){
 // for of loop - can be used only for Arrays
 
 for(let k of my_data.skills){
-  console.log([k]);
+  console.log(k);
 }
 
 // forEach loop can be used only for Arrays
