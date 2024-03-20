@@ -38,7 +38,7 @@ class Movie{
         let pgMovies = [];
 
         movies.forEach(function(movie){
-            if(movie.rating == "PG"){
+            if(movie.rating === "PG"){
                 pgMovies.push(movie)
             }
         });
