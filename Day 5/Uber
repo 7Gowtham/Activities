@@ -1,0 +1,46 @@
+class Uber{
+  constructor(distance, peakHr, carType){
+    this.distance = distance
+    this.peakHr = peakHr
+    this.carType = carType
+  }
+
+  toCalculatePrice(){
+    let costPerKM;
+    let peakHrPercentage;
+    
+	switch(this.carType){
+      case "UberX":
+        this.costPerKM = 12
+        this.peakHrPercentage = 0.3
+        break
+
+      case "UberXL":
+        this.costPerKM = 15
+        this.peakHrPercentage = 0.4
+        break
+
+      default:
+        console.log("Invalid Car type")
+    }
+    
+    let uPrice;
+    
+    if(this.peakHr){
+      uPrice = this.distance * this.costPerKM * (1 + this.peakHrPercentage)
+    }
+    else{
+      uPrice = this.distance * this.costPerKM
+    }
+    return uPrice.toFixed(2)
+  }
+}
+
+let u1 = new Uber(10, true, "UberX")
+let u2 = new Uber(10, false, "UberX")
+let u3 = new Uber(12, true, "UberXL")
+let u4 = new Uber(12, false, "UberXL")
+console.log(u1.toCalculatePrice());
+console.log(u2.toCalculatePrice());
+console.log(u3.toCalculatePrice());
+console.log(u4.toCalculatePrice());
