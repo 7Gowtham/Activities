@@ -1,1 +1,72 @@
+a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
+
+class Movie{
+    constructor(title, studio, rating){
+        this.title = title
+        this.studio = studio
+        this.rating = rating
+    }
+}
+
+let m1 = new Movie("Leo", "7Screens", "PG18")
+console.log(m1.title, m1.studio, m1.rating);
+
+b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+
+class Movie{
+    constructor(title, studio, rating = "PG"){
+        this.title = title
+        this.studio = studio
+        this.rating = rating
+    }
+}
+let m1 = new Movie("Leo", "7Screens", "PG18")
+let m2 = new Movie("Kanguva", "StudioGreen")
+console.log(m1.title, m1.studio, m1.rating);
+console.log(m2.title, m2.studio, m2.rating);
+
+c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.
+
+class Movie{
+    constructor(title, studio, rating = "PG"){
+        this.title = title
+        this.studio = studio
+        this.rating = rating
+    }
+
+    static getPG(movies){
+        let pgMovies = [];
+
+        movies.forEach(function(movie){
+            if(movie.rating == "PG"){
+                pgMovies.push(movie)
+            }
+        });
+        return pgMovies;
+    }
+}
+
+let m1 = new Movie("Leo", "7Screens", "PG18")
+let m2 = new Movie("Kanguva", "StudioGreen")
+let m3 = new Movie("GOAT", "AGS", "PG20")
+let m4 = new Movie("Vampire Diaries", "MKK Productions")
+let m5 = new Movie("Originals", "Vampire D")
+let m6 = new Movie("LUPIN", "French X", "PG15")
+
+let movies = [m1, m2, m3, m4, m5, m6];
+
+console.log(Movie.getPG(movies));
+
+d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
+
+class Movie{
+    constructor(title, studio, rating = "PG"){
+        this.title = title
+        this.studio = studio
+        this.rating = rating
+    }
+}
+
+let m1 = new Movie("Casino Royae", "Eon Productions", "PG12")
+console.log(m1.title, m1.studio, m1.rating)
 
