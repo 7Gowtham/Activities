@@ -1,0 +1,18 @@
+class Person{
+  	constructor(name, age, mail, mob){
+      	this.name = name
+      	this.age = age
+      	this.mail = mail
+      	this.mob = mob
+    }
+
+  	getDetails(){
+      	return `Name of the Person is ${this.name} and the age is ${this.age}. For communication purposes, email is ${this.mail} and contact number is ${this.mob}.`
+    }
+}
+
+let p1 = new Person("Gowtham", 27, "gowtham@gmail.com", 9228472832);
+let p2 = new Person("Mahesh", 28, "mahesh@gmail.com", 8924948923);
+
+console.log(p1.getDetails());
+console.log(p2.getDetails());
