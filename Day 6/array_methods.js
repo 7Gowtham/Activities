@@ -53051,7 +53051,7 @@ let asiaCountries = country_data.filter((country)=>{
     }
 }).map((e)=>e.name.common);
 
-
+//Using region
 let asiaCountries = country_data.filter(country => country.region === "Asia").map(country => country.name.common);
 
 console.log(asiaCountries);
