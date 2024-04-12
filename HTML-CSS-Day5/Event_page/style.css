@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding: 10px;
+}
+
+.header h3{
+    padding: 10px;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.outer-box{
+    width:800px;
+    height:500px;
+    border: 1px solid black;
+    
+}
+
+.inner-box{
+    position: relative;
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    top:5%;
+    left:6%;  
+}
+
+.image-box{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border: 1px solid black;
+    top:10%;
+    left:6%;
+}
+
+.image{
+    position: relative;
+    width:130px;
+    height: 130px;
+    border-radius: 70px;
+    border: 1px solid black;
+    top:10%;
+    left:11%;
+}
+
+.image h3{
+    position: relative;
+    top: 40%;
+}
+
+.form{
+    position: relative;
+    bottom: 50%;
+    left: -5%;
+    text-align: right;
+}
+
+.form div{
+    padding: 5px;
+}
+
+.details input{
+    width: 200px;
+    height: 25px;
+}
+
+.details select{
+    width: 100px;
+    height: 30px;
+}
+
+.seat{
+    position: relative;
+    right: 15%;
+}
+
+.details button{
+    padding: 5px;
+    position: relative;
+    right:8%;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100px;
+}
