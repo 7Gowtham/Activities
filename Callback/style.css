@@ -1,0 +1,31 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+    text-align: center;
+    position: relative;
+    top: 30vh;
+    color: blueviolet;
+}
+
+h1{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 30px;
+    background-color: aqua;
+}
+
+.container-head{
+    text-align: center;
+    position: relative;
+    top:10vh;
+}
+
+h2{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(5, 54, 55);
+    color: white;
+}
